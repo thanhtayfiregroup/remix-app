@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "10e7f5614d4d01b2ea1071e5fd6521ed"
+application_url = "https://editing-jefferson-start-promised.trycloudflare.com/"
+embedded = true
+name = "tay-test"
+handle = "tay-test"
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://editing-jefferson-start-promised.trycloudflare.com/auth/callback",
+  "https://editing-jefferson-start-promised.trycloudflare.com/auth/shopify/callback",
+  "https://editing-jefferson-start-promised.trycloudflare.com/api/auth/callback",
+  "http://localhost:8080/auth"
+]
+
+[pos]
+embedded = false
