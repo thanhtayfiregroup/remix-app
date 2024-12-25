@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "10e7f5614d4d01b2ea1071e5fd6521ed"
-application_url = "https://editing-jefferson-start-promised.trycloudflare.com/"
+application_url = "https://helpful-evaluate-decent-popularity.trycloudflare.com"
 embedded = true
 name = "tay-test"
 handle = "tay-test"
@@ -23,11 +23,14 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://editing-jefferson-start-promised.trycloudflare.com/auth/callback",
-  "https://editing-jefferson-start-promised.trycloudflare.com/auth/shopify/callback",
-  "https://editing-jefferson-start-promised.trycloudflare.com/api/auth/callback",
-  "http://localhost:8080/auth"
+  "https://helpful-evaluate-decent-popularity.trycloudflare.com/auth/callback",
+  "https://helpful-evaluate-decent-popularity.trycloudflare.com/auth/shopify/callback",
+  "https://helpful-evaluate-decent-popularity.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
 embedded = false
+
+[build]
+dev_store_url = "tay-dev-ar6.myshopify.com"
+automatically_update_urls_on_dev = true

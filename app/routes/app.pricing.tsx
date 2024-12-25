@@ -1,4 +1,6 @@
+import { TitleBar } from "@shopify/app-bridge-react";
 import {
+  BlockStack,
   Box,
   Card,
   Layout,
@@ -6,14 +8,12 @@ import {
   List,
   Page,
   Text,
-  BlockStack,
 } from "@shopify/polaris";
-import { TitleBar } from "@shopify/app-bridge-react";
 
-export default function AdditionalPage() {
+export default function PricingPage() {
   return (
     <Page>
-      <TitleBar title="Additional page" />
+      <TitleBar title="Pricing" />
       <Layout>
         <Layout.Section>
           <Card>
